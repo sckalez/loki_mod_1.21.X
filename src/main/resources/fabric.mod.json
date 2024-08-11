@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lokimod",
+	"version": "${version}",
+	"name": "Loki Mod",
+	"description": "This is a mod by loki.",
+	"authors": [
+		"loki"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@loki_cx",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lokimod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.loki.lokimod.LokiMod"
+		],
+		"fabric-datagen": [
+			"net.loki.lokimod.LokiModDataGenerator"
+		],
+		"client": [
+			"net.loki.lokimod.LokiModClient"
+		]
+	},
+	"mixins": [
+		"lokimod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
